@@ -10,7 +10,9 @@ function draw() {
   rect(200,80,200,80);
 
   //ELLA DRAW A HUGE CIRCLE AND MAKE IT SQUASHED
-  ellipse(100,100,100,400);
+  fill('pink');
+  stroke('black');
+  ellipse(170,250,400,100);
   
   //NAOMI DRAW A FISH 
   fill(100, 200, 255);
