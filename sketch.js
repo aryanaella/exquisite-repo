@@ -10,6 +10,6 @@ function draw() {
   rectangle(200,80,200,80);
 
   //ELLA DRAW A HUGE CIRCLE AND MAKE IT SQUASHED
-  
+  ellipse(200,200,100,400);
   
 }
