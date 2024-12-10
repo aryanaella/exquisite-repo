@@ -21,6 +21,7 @@ function draw() {
   drawWaves();
   drawSeabed();
   drawBubbles();
+  drawKelpForests();
 
   // ANA MARIA: Draw an AMAZING RECTANGLE with dynamic colors
   fill(random(255), random(255), random(255));
@@ -99,4 +100,24 @@ function drawFunkyFish(x, y) {
   fill(random(255), random(255), random(255));
   ellipse(x - 20, y - 10, 20, 10);
   ellipse(x + 10, y + 10, 20, 10);
+}
+
+function drawKelpForests() {
+  drawKelp(50, height - 50, color(34, 139, 34));
+  drawKelp(100, height - 50, color(34, 139, 34));
+  drawKelp(200, height - 50, color(34, 139, 34));
+  drawKelp(300, height - 50, color(34, 139, 34));
+  drawKelp(350, height - 50, color(34, 139, 34));
+}
+
+function drawKelp(baseX, baseY, kelpColor) {
+  fill(kelpColor);
+  noStroke();
+  let numLeaves = 8;
+  let stemHeight = 200;
+
+  for (let i = 0; i < numLeaves; i++) {
+    let xOffset = sin(frameCount * 0.02 + i) * 10;
+    ellipse(baseX + xOffset, baseY - i * (stemHeight / numLeaves), 20, 40);
+  }
 }
