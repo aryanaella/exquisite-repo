@@ -37,6 +37,8 @@ function draw() {
 
   // NAOMI: Draw a FUNKY FISH with animated tail
   drawFunkyFish(200, 200);
+  drawFunkyFish(100, 300);
+  drawFunkyFish(400, 300);
 
   // Aryana: Add background color-changing effects dynamically!
 }
