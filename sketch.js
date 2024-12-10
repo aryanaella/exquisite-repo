@@ -10,7 +10,7 @@ function draw() {
   rectangle(200,80,200,80);
 
   //ELLA DRAW A HUGE CIRCLE AND MAKE IT SQUASHED
-  ellipse(500,500,100,400);
+  ellipse(100,100,100,400);
   
   //NAOMI DRAW A FISH 
 }
