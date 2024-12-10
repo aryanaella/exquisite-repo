@@ -8,6 +8,8 @@ function setup() {
 }
 
 function draw() {
+
+  frameRate(10);
   // Change background color every 5 seconds
   if (millis() - lastBgChange > bgChangeTime) {
     bgColor = color(random(255), random(255), random(255));
